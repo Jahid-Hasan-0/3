@@ -1,0 +1,1 @@
+ffmpeg -stream_loop -1 -re -i https://url2up.helloiamjahid.cf/files/video.mp4 -vcodec libx264 -pix_fmt yuvj420p -maxrate 20048k -preset veryfast -r 12 -framerate 30 -g 50 -c:a aac -b:a 128k -ar 44100 -strict experimental -video_track_timescale 1000 -b:v 150000k -f flv  rtmps://live-api-s.facebook.com:443/rtmp/FB-150892097381220-0-AbztMODuN-lOL_VK
